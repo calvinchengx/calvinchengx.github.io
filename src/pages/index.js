@@ -1,20 +1,23 @@
-import Head from 'next/head'
 import blogPosts from '../data/blogposts/blogposts'
 import PostCard from '../components/PostCard'
+import Layout from '../components/hoc/Layout'
+import Sidebar from '../components/shared/Sidebar'
 
-const Home = () => (
-  <div className="container">
-    <Head>
-      <title>Create Next App</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
-    <main>
-      {blogPosts.map((post) => (
-        <PostCard key={post.title} post={post} />
-      ))}
-    </main>
-  </div>
+const Content = () => (
+  <main>
+    {blogPosts.map((post) => (
+      <PostCard key={post.title} post={post} />
+    ))}
+  </main>
 )
 
-export default Home
+const properties = {
+  title: 'home'
+}
+
+const components = {
+  Content,
+  Sidebar
+}
+
+export default Layout({ components, properties })
