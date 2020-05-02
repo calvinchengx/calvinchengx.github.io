@@ -1,6 +1,13 @@
-const debug = process.env.NODE_ENV !== 'production'
+const withPlugins = require('next-compose-plugins')
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/
+})
+const mdxConfig = {
+  pageExtensions: ['js', 'jsx', 'mdx']
+}
 
-module.exports = {
+const debug = process.env.NODE_ENV !== 'production'
+const routeConfig = {
   exportPathMap: function () {
     return {
       '/': { page: '/' }
@@ -22,3 +29,5 @@ module.exports = {
     return config
   }
 }
+
+module.exports = withPlugins([[withMDX, mdxConfig]], routeConfig)
