@@ -29,15 +29,15 @@ function Layout({ components, properties }) {
       return (
         <>
           <DocumentHeader title={properties.title} />
-          <div class="flex flex-col bg-gray-200">
-            <div className="flex h-16 top-0 inset-x-0 bg-blue-600">
+          <div className="flex flex-col">
+            <div className="flex h-16 top-0 inset-x-0 border-b items-center bg-gray-600 border-red-100 m-4">
               <NavHeader />
             </div>
-            <div className="flex h-full">
+            <div className="flex h-full m-4">
               <div className="w-1/5 bg-gray-400 h-full">
                 {this.renderSidebar()}
               </div>
-              <div className="w-4/5 bg-gray 500 h-full">
+              <div className="w-4/5 bg-gray-500 h-full">
                 {this.renderContent()}
               </div>
             </div>

@@ -1,15 +1,15 @@
 const NavButton = () => {
   return (
-    <div class="flex flex-grow lg:w-3/4 xl:w-4/5">
-      <div class="w-full lg:px-6 xl:w-3/4 xl:px-12"></div>
+    <div className="flex flex-grow lg:w-3/4 xl:w-4/5">
+      <div className="w-full lg:px-6 xl:w-3/4 xl:px-12"></div>
 
       <button
         type="button"
         id="sidebar-open"
-        class="flex px-6 items-center lg:hidden text-gray-500 focus:outline-none focus:text-gray-700"
+        className="flex px-6 items-center lg:hidden text-gray-500 focus:outline-none focus:text-gray-700"
       >
         <svg
-          class="fill-current w-4 h-4"
+          className="fill-current w-4 h-4"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
         >
@@ -20,10 +20,10 @@ const NavButton = () => {
       <button
         type="button"
         id="sidebar-close"
-        class="hidden flex px-6 items-center lg:hidden text-gray-500 focus:outline-none focus:text-gray-700"
+        className="hidden flex px-6 items-center lg:hidden text-gray-500 focus:outline-none focus:text-gray-700"
       >
         <svg
-          class="fill-current w-4 h-4"
+          className="fill-current w-4 h-4"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
         >
@@ -31,18 +31,18 @@ const NavButton = () => {
         </svg>
       </button>
 
-      <div class="hidden lg:flex lg:items-center lg:justify-between xl:w-1/4 px-6">
-        <div class="relative mr-4">
+      <div className="hidden lg:flex lg:items-center lg:justify-between xl:w-1/4 px-6">
+        <div className="relative mr-4">
           <select
             data-version-switcher=""
-            class="appearance-none block bg-white pl-2 pr-8 py-1 text-gray-500 font-medium text-base focus:outline-none focus:text-gray-800"
+            className="appearance-none block bg-white pl-2 pr-8 py-1 text-gray-500 font-medium text-base focus:outline-none focus:text-gray-800"
           >
             <option value="v1">v1.4.0</option>
             <option value="v0">v0.7.4</option>
           </select>
-          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
+          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
             <svg
-              class="fill-current h-4 w-4"
+              className="fill-current h-4 w-4"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -50,13 +50,13 @@ const NavButton = () => {
             </svg>
           </div>
         </div>
-        <div class="flex justify-start items-center text-gray-500">
+        <div className="flex justify-start items-center text-gray-500">
           <a
-            class="block flex items-center hover:text-gray-700 mr-5"
+            className="block flex items-center hover:text-gray-700 mr-5"
             href="https://github.com/tailwindcss/tailwindcss"
           >
             <svg
-              class="fill-current w-5 h-5"
+              className="fill-current w-5 h-5"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -65,11 +65,11 @@ const NavButton = () => {
             </svg>
           </a>
           <a
-            class="block flex items-center hover:text-gray-700 mr-5"
+            className="block flex items-center hover:text-gray-700 mr-5"
             href="https://twitter.com/tailwindcss"
           >
             <svg
-              class="fill-current w-5 h-5"
+              className="fill-current w-5 h-5"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -78,18 +78,18 @@ const NavButton = () => {
             </svg>
           </a>
           <a
-            class="block flex items-center hover:text-gray-700"
+            className="block flex items-center hover:text-gray-700"
             href="/discord"
           >
             <svg
-              class="fill-current w-5 h-5"
+              className="fill-current w-5 h-5"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 146 146"
             >
               <title>Discord</title>
               <path
                 d="M107.75 125.001s-4.5-5.375-8.25-10.125c16.375-4.625 22.625-14.875 22.625-14.875-5.125 3.375-10 5.75-14.375 7.375-6.25 2.625-12.25 4.375-18.125 5.375-12 2.25-23 1.625-32.375-.125-7.125-1.375-13.25-3.375-18.375-5.375-2.875-1.125-6-2.5-9.125-4.25-.375-.25-.75-.375-1.125-.625-.25-.125-.375-.25-.5-.375-2.25-1.25-3.5-2.125-3.5-2.125s6 10 21.875 14.75c-3.75 4.75-8.375 10.375-8.375 10.375-27.625-.875-38.125-19-38.125-19 0-40.25 18-72.875 18-72.875 18-13.5 35.125-13.125 35.125-13.125l1.25 1.5c-22.5 6.5-32.875 16.375-32.875 16.375s2.75-1.5 7.375-3.625c13.375-5.875 24-7.5 28.375-7.875.75-.125 1.375-.25 2.125-.25 7.625-1 16.25-1.25 25.25-.25 11.875 1.375 24.625 4.875 37.625 12 0 0-9.875-9.375-31.125-15.875l1.75-2S110 19.626 128 33.126c0 0 18 32.625 18 72.875 0 0-10.625 18.125-38.25 19zM49.625 66.626c-7.125 0-12.75 6.25-12.75 13.875s5.75 13.875 12.75 13.875c7.125 0 12.75-6.25 12.75-13.875.125-7.625-5.625-13.875-12.75-13.875zm45.625 0c-7.125 0-12.75 6.25-12.75 13.875s5.75 13.875 12.75 13.875c7.125 0 12.75-6.25 12.75-13.875s-5.625-13.875-12.75-13.875z"
-                fill-rule="nonzero"
+                fillRule="nonzero"
               ></path>
             </svg>
           </a>
