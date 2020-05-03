@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import config from '../../config'
 
-export default class Header extends React.Component {
+export default class DocumentHeader extends React.Component {
   constructor(props) {
     super(props)
   }

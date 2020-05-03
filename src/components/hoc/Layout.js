@@ -1,5 +1,6 @@
 import React from 'react'
-import Header from '../shared/Header'
+import DocumentHeader from '../shared/DocumentHeader'
+import NavHeader from '../shared/NavHeader'
 
 function Layout({ components, properties }) {
   // deconstruct Content and Sidebar components
@@ -27,13 +28,18 @@ function Layout({ components, properties }) {
     render() {
       return (
         <>
-          <Header title={properties.title} />
-          <div className="flex">
-            <div className="w-1/5 bg-gray-400 h-full">
-              {this.renderSidebar()}
+          <DocumentHeader title={properties.title} />
+          <div class="flex flex-col bg-gray-200">
+            <div className="flex h-16 top-0 inset-x-0 bg-blue-600">
+              <NavHeader />
             </div>
-            <div className="w-4/5 bg-gray 500 h-full">
-              {this.renderContent()}
+            <div className="flex h-full">
+              <div className="w-1/5 bg-gray-400 h-full">
+                {this.renderSidebar()}
+              </div>
+              <div className="w-4/5 bg-gray 500 h-full">
+                {this.renderContent()}
+              </div>
             </div>
           </div>
         </>
