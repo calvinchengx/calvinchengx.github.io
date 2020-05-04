@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "serve",
     "export": "next export",
-    "deploy": "rm -rf node_modules/.cache && rimraf out && rimraf _next && next build && next export && npm run copy",
-    "copy": "cp -rf out/* . && mkdir -p calvinchengx.github.io && cp -rf _next calvinchengx.github.io/"
+    "deploy": "rimraf node_modules/.cache && rimraf out && rimraf _next && next build && next export && npm run copy",
+    "copy": "cp -rf out/* ../ && mkdir -p ../calvinchengx.github.io && cp -rf ../_next ../calvinchengx.github.io/ && rimraf ../_next"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.2",
