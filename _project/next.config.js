@@ -8,7 +8,7 @@ const nextConfig = {
   //     '/': { page: '/' }
   //   }
   // },
-  assetPrefix: !debug ? '/calvinchengx.github.io' : ''
+  assetPrefix: !debug ? '' : ''
   // webpack: (config, { dev }) => {
   //   // Perform customizations to webpack config
   //   // console.log('webpack');
