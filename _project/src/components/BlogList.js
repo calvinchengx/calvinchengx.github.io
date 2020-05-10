@@ -11,12 +11,14 @@ const BlogList = ({ allBlogs }) => {
     return date.toDateString().slice(4)
   }
 
+  console.log('allBlogs length', allBlogs.length)
+
   return (
     <>
       <ul className="list">
-        {allBlogs.length > 1 &&
+        {allBlogs.length >= 1 &&
           allBlogs.map((post) => (
-            <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
+            <Link key={post.slug} href={{ pathname: `${post.slug}` }}>
               <a>
                 <li>
                   <div className="hero_image">

@@ -3,20 +3,26 @@ import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 const glob = require('glob')
 
-import Layout from '../../components/Layout'
+import Layout from '../../../../components/Layout'
+
+function reformatDate(fullDate) {
+  const date = new Date(fullDate)
+  return date.toDateString().slice(4)
+}
+
+function slugifyDate(fullDate) {
+  let d = new Date(fullDate),
+    month = '' + (d.getMonth() + 1),
+    day = '' + d.getDate(),
+    year = d.getFullYear()
+
+  if (month.length < 2) month = '0' + month
+  if (day.length < 2) day = '0' + day
+
+  return '/' + [year, month, day].join('/')
+}
 
 export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
-  function reformatDate(fullDate) {
-    const date = new Date(fullDate)
-    return date.toDateString().slice(4)
-  }
-
-  /*
-   ** Odd fix to get build to run
-   ** It seems like on first go the props
-   ** are undefined — could be a Next bug?
-   */
-
   if (!frontmatter) return <></>
 
   return (
@@ -168,8 +174,8 @@ export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
 
 export async function getStaticProps({ ...ctx }) {
   const { slug } = ctx.params
-  const content = await import(`../../posts/${slug}.md`)
-  const config = await import(`../../data/config.json`)
+  const content = await import(`../../../../posts/${slug}.md`)
+  const config = await import(`../../../../data/config.json`)
   const data = matter(content.default)
 
   return {
@@ -182,21 +188,25 @@ export async function getStaticProps({ ...ctx }) {
 }
 
 export async function getStaticPaths() {
-  //get all .md files in the posts dir
+  // get all .md files in the posts dir
   const blogs = glob.sync('src/posts/**/*.md')
   console.log(1, blogs)
 
-  //remove path and extension to leave filename only
-  const blogSlugs = blogs.map((file) => {
-    console.log(2, file)
-    console.log(3, file.split('/')[2])
-    return file.split('/')[2].replace(/ /g, '-').slice(0, -3).trim()
-  })
+  // remove path and extension to leave filename only
+  let paths = []
+  for (let i = 0; i < blogs.length; i++) {
+    console.log(2, blogs[i])
+    const file = blogs[i]
+    const slug = file.split('/')[2].replace(/ /g, '-').slice(0, -3).trim()
+    console.log(3, slug)
+    const content = await import(`../../../../posts/${slug}.md`)
+    const data = matter(content.default)
+    const frontmatter = data.data
+    console.log(4, frontmatter)
+    const path = slugifyDate(frontmatter.date) + '/' + slug
+    paths.push(path)
+  }
 
-  console.log(4444, blogSlugs)
-
-  // create paths with `slug` param
-  const paths = blogSlugs.map((slug) => `/blog/${slug}`)
   return {
     paths,
     fallback: false

@@ -2,6 +2,18 @@ import matter from 'gray-matter'
 import Layout from '../components/Layout'
 import BlogList from '../components/BlogList'
 
+function slugifyDate(fullDate) {
+  let d = new Date(fullDate),
+    month = '' + (d.getMonth() + 1),
+    day = '' + d.getDate(),
+    year = d.getFullYear()
+
+  if (month.length < 2) month = '0' + month
+  if (day.length < 2) day = '0' + day
+
+  return '/' + [year, month, day].join('/')
+}
+
 const Index = (props) => {
   return (
     <Layout
@@ -27,14 +39,20 @@ export async function getStaticProps() {
 
     const data = keys.map((key, index) => {
       // Create slug from filename
-      const slug = key
-        .replace(/^.*[\\\/]/, '')
-        .split('.')
-        .slice(0, -1)
-        .join('.')
+
       const value = values[index]
       // Parse yaml metadata & markdownbody in document
       const document = matter(value.default)
+      const dateSlug = slugifyDate(document.data.date)
+      console.log(dateSlug)
+      const slug =
+        dateSlug +
+        '/' +
+        key
+          .replace(/^.*[\\\/]/, '')
+          .split('.')
+          .slice(0, -1)
+          .join('.')
       return {
         frontmatter: document.data,
         markdownBody: document.content,
@@ -43,6 +61,8 @@ export async function getStaticProps() {
     })
     return data
   })(require.context('../posts', true, /\.md$/))
+
+  console.log('these are the posts', posts)
 
   return {
     props: {
