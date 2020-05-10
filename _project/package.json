@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "start": "serve ..",
     "build": "next build",
-    "start": "serve",
     "export": "next export",
-    "deploy": "rimraf node_modules/.cache && rimraf out && rimraf _next && next build && next export && npm run copy",
-    "copy": "cp -rf out/* ../ && mkdir -p ../calvinchengx.github.io && cp -rf ../_next ../calvinchengx.github.io/"
+    "clean:project": "rimraf node_modules/.cache && rimraf out && rimraf _next",
+    "clean:parent": "node tools/clean.js",
+    "clean": "npm run clean:parent && npm run clean:project",
+    "copy": "cp -rf out/* ../ && mkdir -p ../calvinchengx.github.io && cp -rf ../_next ../calvinchengx.github.io/",
+    "deploy": "npm run clean && next build && next export && npm run copy"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.2",
@@ -30,6 +33,7 @@
     "babel-plugin-macros": "^2.8.0",
     "babel-plugin-preval": "^5.0.0",
     "babel-plugin-transform-define": "^2.0.0",
+    "fs-extra": "^9.0.0",
     "rimraf": "^3.0.2",
     "serve": "^11.3.0"
   }
