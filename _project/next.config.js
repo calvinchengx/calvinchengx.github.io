@@ -8,7 +8,14 @@ const nextConfig = {
   //     '/': { page: '/' }
   //   }
   // },
-  assetPrefix: !debug ? '' : ''
+  assetPrefix: !debug ? '' : '',
+  webpack: function (config) {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: 'raw-loader'
+    })
+    return config
+  }
   // webpack: (config, { dev }) => {
   //   // Perform customizations to webpack config
   //   // console.log('webpack');
@@ -25,10 +32,21 @@ const nextConfig = {
 }
 
 // mdx
-const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/
-})({
-  pageExtensions: ['js', 'jsx', 'md', 'mdx']
-})
+// const withMDX = require('@next/mdx')({
+//   extension: /\.mdx?$/
+// })({
+//   pageExtensions: ['js', 'jsx', 'md', 'mdx']
+// })
 
-module.exports = withPlugins([withMDX], nextConfig)
+// module.exports = withPlugins([withMDX], nextConfig)
+// module.exports = nextConfig
+
+module.exports = {
+  webpack: function (config) {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: 'raw-loader'
+    })
+    return config
+  }
+}
