@@ -1,4 +1,4 @@
-import Link from 'next/link'
+// import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
 
 const BlogList = ({ allBlogs }) => {
@@ -18,27 +18,25 @@ const BlogList = ({ allBlogs }) => {
       <ul className="list">
         {allBlogs.length >= 1 &&
           allBlogs.map((post) => (
-            <Link key={post.slug} href={{ pathname: `${post.slug}` }}>
-              <a>
-                <li>
-                  <div className="hero_image">
-                    <img
-                      src={post.frontmatter.hero_image}
-                      alt={post.frontmatter.hero_image}
+            <a key={post.slug} href={`${post.slug}`} as={`${post.slug}`}>
+              <li>
+                <div className="hero_image">
+                  <img
+                    src={post.frontmatter.hero_image}
+                    alt={post.frontmatter.hero_image}
+                  />
+                </div>
+                <div className="blog__info">
+                  <h2>{post.frontmatter.title}</h2>
+                  <h3> {reformatDate(post.frontmatter.date)}</h3>
+                  <p>
+                    <ReactMarkdown
+                      source={truncateSummary(post.markdownBody)}
                     />
-                  </div>
-                  <div className="blog__info">
-                    <h2>{post.frontmatter.title}</h2>
-                    <h3> {reformatDate(post.frontmatter.date)}</h3>
-                    <p>
-                      <ReactMarkdown
-                        source={truncateSummary(post.markdownBody)}
-                      />
-                    </p>
-                  </div>
-                </li>
-              </a>
-            </Link>
+                  </p>
+                </div>
+              </li>
+            </a>
           ))}
       </ul>
       <style jsx>

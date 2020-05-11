@@ -3,11 +3,11 @@ const withPlugins = require('next-compose-plugins')
 // next
 const debug = process.env.NODE_ENV !== 'production'
 const nextConfig = {
-  // exportPathMap: function () {
-  //   return {
-  //     '/': { page: '/' }
-  //   }
-  // },
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' }
+    }
+  },
   assetPrefix: !debug ? '' : '',
   webpack: function (config) {
     config.module.rules.push({
