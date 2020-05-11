@@ -15,8 +15,6 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.2",
-    "@mdx-js/loader": "^1.6.1",
-    "@next/mdx": "^9.3.6",
     "autoprefixer": "^9.7.6",
     "gray-matter": "^4.0.2",
     "next": "9.3.6",
@@ -30,8 +28,6 @@
     "tailwindcss": "^1.4.1"
   },
   "devDependencies": {
-    "babel-plugin-macros": "^2.8.0",
-    "babel-plugin-preval": "^5.0.0",
     "babel-plugin-transform-define": "^2.0.0",
     "fs-extra": "^9.0.0",
     "rimraf": "^3.0.2",
