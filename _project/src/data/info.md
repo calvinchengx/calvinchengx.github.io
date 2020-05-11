@@ -1,6 +1,6 @@
 ---
 title: info page
-background_color: '#fff'
+background_color: '#208eff99'
 ---
 
 About Calvin
