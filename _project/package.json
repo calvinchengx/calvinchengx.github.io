@@ -5,19 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "start": "serve ..",
-    "build": "next build",
-    "export": "next export",
+    "build": "next build && next export",
     "clean:project": "rimraf node_modules/.cache && rimraf out && rimraf _next",
     "clean:parent": "node tools/clean.js",
     "clean": "npm run clean:parent && npm run clean:project",
     "copy": "cp -rf out/* ../ && mkdir -p ../calvinchengx.github.io && cp -rf ../_next ../calvinchengx.github.io/",
-    "deploy": "npm run clean && next build && next export && npm run copy"
+    "deploy": "npm run clean && npm run build && npm run copy"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.2",
     "autoprefixer": "^9.7.6",
     "gray-matter": "^4.0.2",
-    "next": "9.3.6",
+    "next": "9.4.0",
     "next-compose-plugins": "^2.2.0",
     "node-glob": "^1.2.0",
     "postcss-import": "^12.0.1",
