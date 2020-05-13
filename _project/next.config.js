@@ -3,7 +3,7 @@ const withOffline = require('next-offline')
 
 const withOfflineConfig = {
   workboxOpts: {
-    swDest: 'service-worker.js',
+    swDest: 'calvinchengx.github.io/service-worker.js',
     runtimeCaching: [
       {
         urlPattern: /^https?.*/,
@@ -21,7 +21,7 @@ const withOfflineConfig = {
     async rewrites() {
       return [
         {
-          source: '/service-worker.js',
+          source: '/calvinchengx.github.io/service-worker.js',
           destination: '/_next/static/service-worker.js'
         }
       ]
