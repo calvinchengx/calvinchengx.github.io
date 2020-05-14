@@ -1,5 +1,6 @@
 // import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
+import Image from './Image'
 
 const BlogList = ({ allBlogs }) => {
   function truncateSummary(content) {
@@ -16,14 +17,9 @@ const BlogList = ({ allBlogs }) => {
       <ul className="list">
         {allBlogs.length >= 1 &&
           allBlogs.map((post) => (
-            <li>
-              <a key={post.slug} href={`${post.slug}`} as={`${post.slug}`}>
-                <div className="hero_image">
-                  <img
-                    src={post.frontmatter.hero_image}
-                    alt={post.frontmatter.hero_image}
-                  />
-                </div>
+            <li key={post.slug}>
+              <a href={`${post.slug}`} as={`${post.slug}`}>
+                <Image image={post.frontmatter.hero_image} />
                 <div className="blog__info">
                   <h2>{post.frontmatter.title}</h2>
                   <h3> {reformatDate(post.frontmatter.date)}</h3>

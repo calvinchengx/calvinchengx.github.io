@@ -240,7 +240,7 @@ export default function Meta(props) {
               font-size: 1rem;
               letter-spacing: -0.5px;
               line-height: 1.1875;
-              color: #676767;
+              color: #4e4e4e;
               font-weight: normal;
             }
 
