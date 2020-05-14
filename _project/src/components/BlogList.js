@@ -11,15 +11,13 @@ const BlogList = ({ allBlogs }) => {
     return date.toDateString().slice(4)
   }
 
-  console.log('allBlogs length', allBlogs.length)
-
   return (
     <>
       <ul className="list">
         {allBlogs.length >= 1 &&
           allBlogs.map((post) => (
-            <a key={post.slug} href={`${post.slug}`} as={`${post.slug}`}>
-              <li>
+            <li>
+              <a key={post.slug} href={`${post.slug}`} as={`${post.slug}`}>
                 <div className="hero_image">
                   <img
                     src={post.frontmatter.hero_image}
@@ -31,8 +29,8 @@ const BlogList = ({ allBlogs }) => {
                   <h3> {reformatDate(post.frontmatter.date)}</h3>
                   <ReactMarkdown source={truncateSummary(post.markdownBody)} />
                 </div>
-              </li>
-            </a>
+              </a>
+            </li>
           ))}
       </ul>
       <style jsx>
@@ -41,13 +39,13 @@ const BlogList = ({ allBlogs }) => {
           a:hover {
             opacity: 1;
           }
-          a:hover li div.hero_image img {
+          li a:hover div.hero_image img {
             opacity: 0.8;
             transition: opacity 0.3s ease;
           }
-          a:hover li .blog__info h2,
-          a:hover li .blog__info h3,
-          a:hover li .blog__info p {
+          li a:hover .blog__info h2,
+          li a:hover .blog__info h3,
+          li a:hover .blog__info p {
             transform: translateX(10px);
             transition: transform 0.5s ease-out;
           }
@@ -79,7 +77,7 @@ const BlogList = ({ allBlogs }) => {
             transform: translateX(0px);
             transition: transform 0.5s ease-out;
           }
-          li {
+          a {
             opacity: inherit;
             display: flex;
             justify-content: center;
@@ -97,7 +95,7 @@ const BlogList = ({ allBlogs }) => {
             max-width: 900px;
           }
           @media (min-width: 768px) {
-            li {
+            a {
               min-height: 250px;
               height: 33.333vh;
               flex-direction: row;
