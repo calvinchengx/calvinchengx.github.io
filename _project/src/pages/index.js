@@ -62,8 +62,6 @@ export async function getStaticProps() {
     return data
   })(require.context('../posts', true, /\.md$/))
 
-  console.log('these are the posts', posts)
-
   return {
     props: {
       allBlogs: posts,
