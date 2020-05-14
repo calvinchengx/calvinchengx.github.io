@@ -40,7 +40,6 @@ export async function getStaticProps() {
       // Parse yaml metadata & markdownbody in document
       const document = matter(value.default)
       const dateSlug = slugifyDate(document.data.date)
-      console.log(dateSlug)
       const slug =
         dateSlug +
         '/' +

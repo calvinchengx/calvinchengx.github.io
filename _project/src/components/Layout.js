@@ -2,7 +2,6 @@ import Header from './Header'
 import Meta from './Meta'
 
 export default function Layout(props) {
-  console.log(props)
   return (
     <section
       className={`layout ${props.pathname == 'info' && 'info_page'}`}

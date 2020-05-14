@@ -190,19 +190,15 @@ export async function getStaticProps({ ...ctx }) {
 export async function getStaticPaths() {
   // get all .md files in the posts dir
   const blogs = glob.sync('src/posts/**/*.md')
-  console.log(1, blogs)
 
   // remove path and extension to leave filename only
   let paths = []
   for (let i = 0; i < blogs.length; i++) {
-    console.log(2, blogs[i])
     const file = blogs[i]
     const slug = file.split('/')[2].replace(/ /g, '-').slice(0, -3).trim()
-    console.log(3, slug)
     const content = await import(`../../../../posts/${slug}.md`)
     const data = matter(content.default)
     const frontmatter = data.data
-    console.log(4, frontmatter)
     const path = slugifyDate(frontmatter.date) + '/' + slug
     paths.push(path)
   }

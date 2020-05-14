@@ -1,5 +1,4 @@
 const Image = ({ image }) => {
-  console.log('image:', image)
   if (image === undefined) {
     return <></>
   }
