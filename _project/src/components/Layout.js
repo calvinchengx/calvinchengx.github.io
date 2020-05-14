@@ -2,6 +2,7 @@ import Header from './Header'
 import Meta from './Meta'
 
 export default function Layout(props) {
+  console.log(props)
   return (
     <section
       className={`layout ${props.pathname == 'info' && 'info_page'}`}
@@ -10,8 +11,8 @@ export default function Layout(props) {
         color: `${props.pathname == 'info' && 'white'}`
       }}
     >
-      <Meta siteTitle={props.title} siteDescription={props.description} />
-      <Header siteTitle={props.title} />
+      <Meta title={props.title} description={props.description} />
+      <Header title={props.title} />
       <div className="content">{props.children}</div>
       <style jsx>
         {`

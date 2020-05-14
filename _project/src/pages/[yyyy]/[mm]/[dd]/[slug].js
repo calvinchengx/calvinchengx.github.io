@@ -22,11 +22,11 @@ function slugifyDate(fullDate) {
   return '/' + [year, month, day].join('/')
 }
 
-export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
+export default function BlogTemplate({ frontmatter, markdownBody, title }) {
   if (!frontmatter) return <></>
 
   return (
-    <Layout siteTitle={siteTitle}>
+    <Layout title={title}>
       <article className="blog">
         <div className="blog__info">
           <h1>{frontmatter.title}</h1>
@@ -180,7 +180,7 @@ export async function getStaticProps({ ...ctx }) {
 
   return {
     props: {
-      siteTitle: config.title,
+      title: config.title,
       frontmatter: data.data,
       markdownBody: data.content
     }

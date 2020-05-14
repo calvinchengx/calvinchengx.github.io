@@ -5,7 +5,7 @@ export default function Header(props) {
     <header className="header">
       <nav className="nav" role="navigation" aria-label="main navigation">
         <Link href="/">
-          <h1>{props.siteTitle}</h1>
+          <h1>{props.title}</h1>
         </Link>
         <div>
           <Link

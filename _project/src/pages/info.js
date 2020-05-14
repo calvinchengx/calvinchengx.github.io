@@ -7,7 +7,7 @@ export default function Info({ frontmatter, markdownBody, title }) {
     <Layout
       pathname="info"
       bgColor={frontmatter.background_color}
-      siteTitle={title}
+      title={title}
     >
       <section className="info_blurb">
         <ReactMarkdown source={markdownBody} />

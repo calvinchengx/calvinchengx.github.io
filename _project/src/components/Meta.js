@@ -4,7 +4,7 @@ export default function Meta(props) {
   return (
     <>
       <Head>
-        <title>{props.siteTitle}</title>
+        <title>{props.title}</title>
 
         <link
           rel="apple-touch-icon"

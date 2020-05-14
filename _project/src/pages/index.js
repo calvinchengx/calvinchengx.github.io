@@ -16,11 +16,7 @@ function slugifyDate(fullDate) {
 
 const Index = (props) => {
   return (
-    <Layout
-      pathname="/"
-      siteTitle={props.title}
-      siteDescription={props.description}
-    >
+    <Layout pathname="/" title={props.title} description={props.description}>
       <section>
         <BlogList allBlogs={props.allBlogs} />
       </section>
