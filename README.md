@@ -1,6 +1,6 @@
 # Website
 
-My [ersonal website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+My personal website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
 
