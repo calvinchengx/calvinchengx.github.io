@@ -13,6 +13,9 @@
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+  --ifm-link-color: rgba(217,119,6);
+  --ifm-navbar-link-color: rgba(217,119,6);
+  --ifm-navbar-link-hover-color: rgba(217,119,6);
   --ifm-code-font-size: 95%;
 }
 
