@@ -14,7 +14,8 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'calvinchengx', // Usually your GitHub org/user name.
-  projectName: 'blog', // Usually your repo name.
+  projectName: 'calvinchengx.github.io', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
 
   presets: [
     [
