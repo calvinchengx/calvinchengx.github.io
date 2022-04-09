@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'calvinx',
-  tagline: 'I design, code and build product teams',
+  tagline: 'I design, code and lead product teams',
   url: 'https://calvinx.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
