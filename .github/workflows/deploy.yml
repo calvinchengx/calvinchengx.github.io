@@ -25,7 +25,7 @@ jobs:
 
       - name: Deploy to Github Pages
         env:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: GIT_USER=calvinchengx yarn deploy
 
       # Popular action to deploy to GitHub Pages:
