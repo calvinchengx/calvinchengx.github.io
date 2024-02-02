@@ -39,7 +39,7 @@ The Microsoft today leverages linux as a profit center as part of its Azure clou
 
 Microsoft needs to have a strong opinion that its own Operating System is the best. That is their core profit center since its founding. But it also needs to have loosely held position about that as the competitive landscape changed.
 
-## Marketing Timing
+## Market Timing
 
 Could Microsoft have changed its strongly held opinion earlier and be the market leader for cloud services?
 
