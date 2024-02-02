@@ -13,6 +13,8 @@ a16z wrote a [well thought out piece](https://future.a16z.com/web3-decentralizat
 
 It's a great read and I can definitely identify with it in relation to my own experiences working with a range of crypto-native, web3 companies.
 
+<!-- truncate -->
+
 I have been lucky enough to have opportunities to work for a diverse range of companies - from the traditional, hierarchical company in my very first job and transiting through a range of software-centric, web 1.0 and web 2.0 startup companies.  And I have had the chance to see first hand how different the leadership's mindsets are, across the entire spectrum of operating culture.
 
 ## The Traditional, Industrial Corporation

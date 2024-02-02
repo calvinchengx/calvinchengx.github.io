@@ -15,6 +15,8 @@ The most challenging technical ability to master is the ability to hold contradi
 
 Hear me out.
 
+<!-- truncate -->
+
 ## Why is this important?
 
 This is a skillset that is relevant to us - even more so if one is a professional engineer - in this world around us dominated by technology. Navigating the noisy, diverse and often chaotic world of business goals, product design and engineering disciplines means that we are perpetually faced with diverse opinions and are compelled by tight deadlines to make clear decisions. 
