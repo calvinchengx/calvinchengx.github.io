@@ -45,10 +45,6 @@ const config = {
     ({
       navbar: {
         title: 'calvinx',
-        logo: {
-          alt: 'calvinx',
-          src: 'img/logo.png',
-        },
         items: [
           // {
           //   type: 'doc',
