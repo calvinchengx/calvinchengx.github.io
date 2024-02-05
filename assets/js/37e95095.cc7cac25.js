@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcalvinxcom_2=self.webpackChunkcalvinxcom_2||[]).push([[8873],{9e3:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/learn","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

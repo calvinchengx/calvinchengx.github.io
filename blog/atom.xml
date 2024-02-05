@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://calvinx.com/blog</id>
+    <title>calvinx Blog</title>
+    <updated>2024-02-02T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://calvinx.com/blog"/>
+    <subtitle>calvinx Blog</subtitle>
+    <icon>https://calvinx.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Strong Opinions, Loosely Held]]></title>
+        <id>https://calvinx.com/blog/strong-opinions-loosely-held</id>
+        <link href="https://calvinx.com/blog/strong-opinions-loosely-held"/>
+        <updated>2024-02-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[An old friend of mine queried, over hot mocha at a hipster cafe: "So Calvin, what is the most challenging technical skillset or programming language that you think I should master, to grow my tech career?",]]></summary>
+        <content type="html"><![CDATA[<p>An old friend of mine queried, over hot mocha at a hipster cafe: "So Calvin, what is the most challenging technical skillset or programming language that you think I should master, to grow my tech career?",</p>
+<p>I was most tempted to answer - "Haskell", "Erlang", "Rust", "electronics design", "cryptography" or "AI".</p>
+<p>But I decided otherwise.</p>
+<p>The most challenging technical ability to master is the ability to hold contradictory ideas in your head, remain zen regardless of uncertainties and execute despite a lack of clarity.  To be fair, one can argue that this isn't really a technical skill and it sounds a lot more like soft skills.</p>
+<p>Hear me out.</p>
+<h2 id="why-is-this-important">Why is this important?</h2>
+<p>This is a skillset that is relevant to us - even more so if one is a professional engineer - in this world around us dominated by technology. Navigating the noisy, diverse and often chaotic world of business goals, product design and engineering disciplines means that we are perpetually faced with diverse opinions and are compelled by tight deadlines to make clear decisions.</p>
+<p>Being able to do so with a strong opinion, and yet be ready with contradictory opinions as backups and executed in parallel, is the 2nd order, high level bit that one needs to flip, in order to be successful as a principal engineer, or a successful executive.</p>
+<p>This is one of the attributes (besides many other personalities) that I look for when I hire, or when I choose who I prefer to work with and who I want to work for.</p>
+<h2 id="but-how-any-case-studies">But how? Any Case Studies?</h2>
+<p>That sounds confusing.  Are there case studies we can learn from?</p>
+<p>Here's one - Microsoft embracing Linux.</p>
+<p>Linux was seen as a threat by Microsoft and declared as a virus that needs to be extinguished and its open source nature was compared to communism. A complete 180 degrees change of mind occurred when Satya Nadella took over as CEO.</p>
+<p>To do so, Microsoft needed to overcome its own prejudices, and more significantly, it needed to overcome organisational resistance because financial incentives were aligned for their own in-house software capabilities.  Changing behaviours is a monumental challenge and can devolve into endless technical debates with no outcome.</p>
+<p>The Microsoft today leverages linux as a profit center as part of its Azure cloud offering and its engineers actively contribute to improving various linux distributions. Even though Azure's cloud offering places it 3rd place in market share behind Amazon's AWS and Google's GCP, it has managed to remain relevant.</p>
+<p>Microsoft needs to have a strong opinion that its own Operating System is the best. Windows OS has been their core profit center since its founding. But Microsoft also needs to have a loosely held position about that as the competitive landscape changes.</p>
+<h2 id="market-timing">Market Timing</h2>
+<p>Could Microsoft have changed its strongly held opinion earlier and be the market leader for cloud services?</p>
+<p>Linux is the building block for most of cloud services today, holding more than 90% market share. Windows OS was designed for the desktop and was never really suitable for cloud services for many technical reasons. So in order for Microsoft to succeed in cloud, it really required both business acumen and technical know-how to understand how to leverage Linux instead of treating it like the enemy or dismissing it as a "toy" OS.</p>
+<p>At that point in tech history - 2010s - there were a lot of shared server providers and emerging VPS providers like Linode, leveraging the open source license nature of Linux to provide convenient cloud servers.</p>
+<p>So as a thought experiment, the important questions we can ask ourselves - with the benefit of hindsight - are</p>
+<ol>
+<li>
+<p>What could Microsoft have done so that Azure embraced linux, become a category leader and innovated before Amazon launched its AWS cloud offering?</p>
+</li>
+<li>
+<p>How can Microsoft join the dots - that shared servers or Virtual Private Servers leveraging Linux on Virtual Machines will be fundamental to cloud services - when the dots do not appear to be related at that point in time? Before anyone does? At the correct market timing?</p>
+</li>
+<li>
+<p>How do we think outside the box within the Microsoft organisation? It is not hard to imagine that many executives and principal engineers are believers in their own ecosystem - and have financial incentives to remain so - and are mostly likely to take the "Strong Opinion, Tightly Held" stance.</p>
+</li>
+</ol>
+<h2 id="the-billion-dollar-technical-acumen">The Billion Dollar Technical Acumen</h2>
+<p>Going to the root of the challenge - the challenge would have been to find and appoint leaders who have sharp intuition, who are willing to measure risks, execute on specific business and product experiments and can hold completely contradicting ideas in their head - "Windows is great" and "Linux is ALSO great".</p>
+<p>Linux was and is Microsoft Windows' or Windows Server' competitor. But Linux was and is ALSO Windows' complement. Linux is technically appropriate for cloud services, viable precisely because it has no license fees and can be leveraged as such as a cloud offering, i.e. make money on rental of servers, not on license fees. And while Windows is Microsoft's profitable business line, Microsoft as an organization can continue to love and support its loyal Windows customer base.</p>
+<p>And this, this ability to have "Strong Opinions, Loosely Held", is the Billion Dollar skill (technical acumen, and yes, soft skill) to deliver success and signal amidst the noise.</p>]]></content>
+        <author>
+            <name>Calvin Cheng</name>
+            <uri>https://github.com/calvinchengx</uri>
+        </author>
+        <category label="learn" term="learn"/>
+        <category label="grow" term="grow"/>
+        <category label="empower" term="empower"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Web3 is a mindset change]]></title>
+        <id>https://calvinx.com/blog/web3-mindset</id>
+        <link href="https://calvinx.com/blog/web3-mindset"/>
+        <updated>2022-04-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[a16z wrote a well thought out piece expressing the why and the promise of web3 as a design challenge requiring strong foundations in 3 aspects]]></summary>
+        <content type="html"><![CDATA[<p>a16z wrote a <a href="https://future.a16z.com/web3-decentralization-models-framework-principles-how-to/">well thought out piece</a> expressing the why and the promise of web3 as a design challenge requiring strong foundations in 3 aspects</p>
+<ul>
+<li>technical decentralization</li>
+<li>economic decentralization</li>
+<li>legal decentralization</li>
+</ul>
+<p>It's a great read and I can definitely identify with it in relation to my own experiences working with a range of crypto-native, web3 companies.</p>
+<p>I have been lucky enough to have opportunities to work for a diverse range of companies - from the traditional, hierarchical company in my very first job and transiting through a range of software-centric, web 1.0 and web 2.0 startup companies.  And I have had the chance to see first hand how different the leadership's mindsets are, across the entire spectrum of operating culture.</p>
+<h2 id="the-traditional-industrial-corporation">The Traditional, Industrial Corporation</h2>
+<p>The traditional corporation in the 2000s is all about management command-and-control, operational efficiency and cost control. This model has a long history from nineteenth-century industrialists. Peter Drucker (1909-2005) taught that management is a liberal art and infused his management advice with interdisciplinary lessons from history, sociology, psychology, philosophy, culture and religion. Drucker's approach worked well in the increasingly mature business world of the second half of the twentieth century where large corporations have developed basic manufacturing efficiencies and managerial hierachies of mass production.</p>
+<p>But Drucker was ahead of his time. He is also intrigued by employees who knew more about certain subjects than their bosses or colleagues, and yet had to collaborate with others in a large organization. Drucker challenged the common thinking about how organizations should be run and took it upon himself to poke holes in their beliefs, hoping to challenge organizations to evolve beyond their assumptions.</p>
+<p>Drucker's writings have predicted many of the major developments in the past 30 years, including privatization and decentralization; the rise of Japan, the decisive importance of marketing and the emergence of knowledge work that necessitates lifelong learning.</p>
+<h2 id="dot-com-boom-and-crash-and-web-20">Dot Com Boom-and-Crash and Web 2.0</h2>
+<p>However, Drucker did not fully understand the economic significance of the internet. In an interview with Erick Shonfeld, Drucker expresses his belief that the cultural impact of the Internet is <a href="https://boards.fool.com/drucker-the-internet-more-buffett-or-barrett-19648461.aspx?sort=whole">unbelievably great and has tremendous importance, it is only marginal [economic] size</a>. In his given context and mental framework, he sees the internet as "another distribution channel" for corporations.</p>
+<p>Almost 20 years later, with the benefit of hindsight, we now know that the companies with the biggest market capitalization in the world are mostly internet companies - <a href="https://www.investopedia.com/biggest-companies-in-the-world-by-market-cap-5212784">from Apple, to Microsoft, Alphabet, Amazon and Meta</a>.</p>
+<p>An entirely different way of thinking and operating has emerged over the past two decades where how-fast-you-learn and how-fast-companies-can-execute-on-knowledge-work are the critical paths that these modern corporations have, over their industrial-age hierachical corporations.</p>
+<p>Working for the traditional corporation is distinctly different from working for a modern software-first corporation. In the traditional corporation, the management takes on a top-down approach to planning and execution. Plans are carefully charted out ahead-of-time and then timelines and resources are allocated to subordinate departments and teams.</p>
+<p>Modern internet-age companies have management ethos that are in stark contrast against their industrial age counterparts. The emphasis is on rapid experimentation and innovation, by empowering autonomous teams and knowledge workers, on the basis of these teams' deep expertise and knowledge.</p>
+<p>It is important to note that this mindset evolution is not a binary choice though. Rather, it is an entire spectrum of nuanced management approaches across a huge range of companies.</p>
+<p>As a personal anecdote and in my own work experiences, these management mindset differences are significant and result in huge differences in economic outcome - both for the workers involved as well as the companies themselves.</p>
+<h2 id="the-web-3-mindset">The Web 3 Mindset</h2>
+<p>But the Web 2 / Internet-era corporate management mindset and the traditional corporate management mindset are similar in one fundamental aspect - maximize profits for insiders, management and shareholders, even if it's at the expense of the wider social good.</p>
+<p>And this is exactly <a href="https://www.cmswire.com/information-management/why-jack-dorsey-went-to-war-with-andreessen-horowitz/">why Jack Dorsey is famously critical of a16z</a>.</p>
+<blockquote>
+<p>To Dorsey, Andreessen Horowitz and its $2.2 billion crypto fund epitomize
+much of what’s wrong in the crypto movement. By funding companies that
+enable a new internet built on the blockchain — aka Web3 — Andreessen Horowitz
+is positioning itself to profit mightily from a system that (if it works) is
+meant to distribute gains to the users. Funding these companies can also entitle
+VC firms to tokens they can use to steer governance and take outsized returns,
+which doesn’t help matters. “You don’t own ‘web3,’“ Dorsey tweeted. “The VCs and
+their LPs do. It will never escape their incentives. It’s ultimately a
+centralized entity with a different label.”</p>
+</blockquote>
+<p>Will VCs have an outsized influence on the nature of web3?</p>
+<p>Or is there yet hope that the crypto purists (like Jack Dorsey) and VC-funded web3 startups have a path on a middle road?</p>
+<p>Web 3 takes the concept of capitalism to a much wider audience - but that requires a shift in management mindset and style. It will take a whole new mindset and leadership model to understand the zen of growing the pie to empower communities and customers, beyond management and shareholders (investors).</p>
+<p>There is nothing harder than changing people's behaviour and mindset. This is a non-trivial mindset change for people who are already well-schooled with operating models of Traditional Corporations, the Web 2 corporations or the VC-funded corporations.</p>
+<p>Are we at the beginning of a better, more enlightened form of capitalism? Or is it more of the same?</p>]]></content>
+        <author>
+            <name>Calvin Cheng</name>
+            <uri>https://github.com/calvinchengx</uri>
+        </author>
+        <category label="learn" term="learn"/>
+        <category label="grow" term="grow"/>
+        <category label="empower" term="empower"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Reflections]]></title>
+        <id>https://calvinx.com/blog/reflections</id>
+        <link href="https://calvinx.com/blog/reflections"/>
+        <updated>2022-02-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[It's been a fun 5 years journey in some amazing companies.  It's all heads down and getting things done.]]></summary>
+        <content type="html"><![CDATA[<p>It's been a fun 5 years journey in some amazing companies.  It's all heads down and getting things done.</p>
+<p>And it's been a while since I wrote and publish publicly.</p>
+<p>It's a really good time for some reflection and for sharing mistakes I have made, successes I have had, the cool people I have had the opportunity to work with and all the fun stuff I have done.</p>]]></content>
+        <author>
+            <name>Calvin Cheng</name>
+            <uri>https://github.com/calvinchengx</uri>
+        </author>
+        <category label="learn" term="learn"/>
+        <category label="do" term="do"/>
+        <category label="reflect" term="reflect"/>
+    </entry>
+</feed>

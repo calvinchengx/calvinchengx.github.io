@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcalvinxcom_2=self.webpackChunkcalvinxcom_2||[]).push([[5896],{6816:e=>{e.exports=JSON.parse('{"label":"empower","permalink":"/blog/tags/empower","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);

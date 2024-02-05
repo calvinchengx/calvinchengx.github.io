@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcalvinxcom_2=self.webpackChunkcalvinxcom_2||[]).push([[3260],{22:e=>{e.exports=JSON.parse('{"label":"reflect","permalink":"/blog/tags/reflect","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
