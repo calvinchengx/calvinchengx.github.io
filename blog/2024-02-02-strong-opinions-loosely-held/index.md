@@ -31,13 +31,13 @@ That sounds confusing.  Are there case studies we can learn from?
 
 Here's one - Microsoft embracing Linux.
 
-Linux was seen as a threat by Microsoft and declared as a virus that needs to be extinguished and its open source nature was compared to communism. It's a complete 180 degrees change of mind when Satya Nadella took over as CEO.
+Linux was seen as a threat by Microsoft and declared as a virus that needs to be extinguished and its open source nature was compared to communism. A complete 180 degrees change of mind occurred when Satya Nadella took over as CEO.
 
-To do so, Microsoft needed to overcome its own prejudices, and more significantly, it needed to overcome organisational resistance because financial incentives are aligned for their own in-house software capabilities.  This is a monumental organisational behaviour change management challenge and can devolve into endless technical debates with no outcome. 
+To do so, Microsoft needed to overcome its own prejudices, and more significantly, it needed to overcome organisational resistance because financial incentives were aligned for their own in-house software capabilities.  Changing behaviours is a monumental challenge and can devolve into endless technical debates with no outcome. 
 
 The Microsoft today leverages linux as a profit center as part of its Azure cloud offering and its engineers actively contribute to improving various linux distributions. Even though Azure's cloud offering places it 3rd place in market share behind Amazon's AWS and Google's GCP, it has managed to remain relevant.
 
-Microsoft needs to have a strong opinion that its own Operating System is the best. That is their core profit center since its founding. But it also needs to have loosely held position about that as the competitive landscape changed.
+Microsoft needs to have a strong opinion that its own Operating System is the best. Windows OS has been their core profit center since its founding. But Microsoft also needs to have a loosely held position about that as the competitive landscape changes.
 
 ## Market Timing
 
